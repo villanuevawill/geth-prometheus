@@ -1,11 +1,6 @@
 version: '2.2'
 
 services:
-
-  geth:
-    image: ethereum/client-go:latest
-    command: --goerli --metrics --metrics.expensive --pprof --pprofaddr=0.0.0.0
-
   prometheus:
     image: prom/prometheus
     depends_on:

@@ -10,8 +10,8 @@ alerting:
     timeout: 5s
 scrape_configs:
 - job_name: geth
-  metrics_path: /debug/metrics/prometheus
+  metrics_path: debug/metrics/prometheus
   scheme: http
   static_configs:
   - targets:
-    - geth:6060
+    - localhost:6060
